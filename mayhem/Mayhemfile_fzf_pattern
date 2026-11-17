@@ -1,0 +1,9 @@
+project: savantenvs/telescope-fzf-native.nvim
+target: fzf_pattern
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fzf_pattern/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_fzf_pattern
+    libfuzzer: true
+    timeout: 5

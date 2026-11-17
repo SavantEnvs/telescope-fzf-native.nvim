@@ -1,0 +1,14 @@
+# Build context for mayhem/Dockerfile: the FULL repo incl. .git (the grader uses history),
+# minus local build outputs and editor cruft. build.sh recreates everything under build/.
+build/
+.cache/
+compile_commands.json
+crash-*
+leak-*
+timeout-*
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+*~
